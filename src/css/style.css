@@ -1,0 +1,75 @@
+body {
+  box-sizing: border-box;
+}
+
+.tasks {
+  width: 250px;
+  position: relative;
+  margin: auto;
+  padding: 30px;
+  color: #3d3232;
+  background: linear-gradient( #bbb, transparent 1px), linear-gradient( 90deg, #bbb, transparent 1px);
+  background-size: 15px 15px;
+  background-position: center center;
+}
+
+#input_task {
+  width: 100%;
+  font-size: 20px;
+}
+
+.div_task p {
+  margin: 0;
+}
+
+.item_task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  background-color: white;
+  padding: 7px 15px;
+  font-size: 20px;
+}
+
+.item_task p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.checked {
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 15px;
+}
+
+.error {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid;
+  border-radius: 15px;
+  padding: 10px;
+  color: red;
+  background-color: white;  
+  position: absolute;
+  width: 76%;
+  top: 120px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.close_error {
+  cursor: pointer;
+}
